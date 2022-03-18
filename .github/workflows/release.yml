@@ -30,7 +30,7 @@ jobs:
           go-version: 1.17
       - name: Go test
         run: |
-          go mod tidy
+          go mod tidy -compat=1.17
           go test ./...
       - name: Install Fyne CLI
         run: |
@@ -54,7 +54,7 @@ jobs:
           go-version: 1.17
       - name: Go test
         run: |
-          go mod tidy
+          go mod tidy -compat=1.17
           go test ./...
       - name: Install Fyne CLI
         run: |
